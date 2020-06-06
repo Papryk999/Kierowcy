@@ -1,0 +1,200 @@
+{
+    box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+/* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+
+}
+
+
+/* Style the navigation bar links */
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Active/current link */
+.navbar a.active {
+    background-color: #666;
+    color: white;
+}
+
+/* Main column */
+.main {
+    -ms-flex: 100%; /* IE10 */
+    flex: 100%;
+    background: #1abc9c;
+    padding: 20px;
+    height: 700px;
+    max-height: 1000px;
+    text-align: center;
+}
+
+#container {
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 700px;
+    max-height: none;
+    margin: 10px;
+    background: #1abc9c;
+}
+
+#container .item {
+    text-align: justify;
+    width: 700%;
+    height: 190%;
+    padding: 10px;
+    margin: 10px;
+    background: #FFFFFF;
+    border-radius: 7px;
+}
+
+#container .item2 {
+    width: 350px;
+    height: 70px;
+    text-align: center;
+    padding: 10px;
+    margin: auto;
+    background: #FFFFFF;
+    border-radius: 7px;
+    top: 50%;
+}
+
+#container2 {
+    width: 350px;
+    height: 70px;
+    text-align: center;
+    padding: 10px;
+    margin: auto;
+    background: #1abc9c;
+    top: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row
+}
+
+#container2 .item1 {
+
+    text-align: center;
+    padding: 10px;
+    margin: auto;
+    background: #1abc9c;
+
+    position: center;
+    width: 50px;
+    height: 47px;
+    display: flex;
+
+    background: url(depositphotos_51960471-stock-illustration-tow-truck.jpg);
+    border-radius: 48px;
+
+}
+
+#container2 .item22 {
+
+    text-align: center;
+    padding: 10px;
+    margin: auto;
+    background: #1abc9c;
+
+    position: center;
+    width: 50px;
+    height: 47px;
+    display: flex;
+
+    background: url(unnamed.jpg);
+    border-radius: 48px;
+}
+
+#container2 .item33 {
+
+    text-align: center;
+    padding: 10px;
+    margin: auto;
+    background: #1abc9c;
+
+    position: center;
+    width: 50px;
+    height: 47px;
+    display: flex;
+
+    background: url(chłodni-ciężarówki-linii-ikona-zimny-produkt-dostawy-transport-90833172.jpg);
+
+    border-radius: 48px;
+}
+
+#container2 .item44 {
+
+    text-align: center;
+    padding: 10px;
+    margin: auto;
+    background: #1abc9c;
+
+    position: center;
+    width: 50px;
+    height: 47px;
+    display: flex;
+
+
+    background: url(wektorowa-kontener-ikona-znak-lub-103987206.jpg);
+    border-radius: 48px;
+}
+
+/* Footer */
+#footer {
+    background: #333;
+    height: 19%;
+    margin: auto;
+    color: white;
+    position: absolute;
+    width: 100%;
+}
+
+#footer .item {
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    line-height: 20%;
+}
+
+.headtext {
+    text-align: center;
+}
+
+/* Media Queries: Tabled Portrait */
+@media screen and (max-width: 768px) {
+    #primary {
+        width: 100%;
+    }
+
+    #secondary {
+        width: 100%;
+        margin: 0;
+        border: none;
+    }
+}
